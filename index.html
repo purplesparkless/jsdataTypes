@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- JavaScript has 8 Datatypes -->
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object 
+
+<!-- The Object Datatype -->
+1. An object
+2. An array
+3. A date 
+
+    <script>
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25"); 
+
+// When adding a number and a string, JavaScript will treat the number as a string.
+
+// JavaScript evaluates expressions from left to right. Different sequences can produce different results:
+let h = 16 + 4 + "Volvo";  //20Volvo
+let g = "Volvo" + 16 + 4; //Volvo164
+
+// All JavaScript numbers are stored as decimal numbers (floating point).
+
+// Exponential Notation
+let o = 123e5;    // 12300000
+let z = 123e-5;   // 0.00123 
+
+// JavaScript BigInt
+let d = BigInt("123456789012345678901234567890");
+
+// JavaScript Booleans
+let xh = 5;
+let yh = 5;
+let zh = 6;
+(xh == yh)       // Returns true
+(xh == zh)       // Returns false 
+
+// JavaScript Arrays  //JavaScript arrays are written with square brackets.
+const cars2 = ["Saab", "Volvo", "BMW"]; // Array indexes are zero-based, which means the first item is [0], second is [1], and so on.
+
+// JavaScript Objects //JavaScript objects are written with curly braces {}.
+const person2 = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// The typeof Operator  //You can use the JavaScript typeof operator to find the type of a JavaScript variable.
+typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof 0              // Returns "number"
+typeof 314            // Returns "number"
+typeof 3.14           // Returns "number"
+typeof (3)            // Returns "number"
+
+// Undefined //In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+let car;    // Value is undefined, type is undefined 
+
+// Empty Values
+// An empty value has nothing to do with undefined.
+// An empty string has both a legal value and a type.
+let car2 = "";    // The value is "", the typeof is "string" 
+
+    </script>
+</body>
+</html>
